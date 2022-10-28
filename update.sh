@@ -12,7 +12,6 @@ else
     echo "\033[0;31mError\033[0m"
 fi
 
-
 #Bashrc
 bashrc="/home/pietro/.bashrc"
 bashrc_dest="/home/pietro/dotfiles/bash/.bashrc"
@@ -69,13 +68,4 @@ else
     echo "\033[0;31mError\033[0m"
 fi
 
-
 rm log_file
-
-
-
-
-
-
-
-
