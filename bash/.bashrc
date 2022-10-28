@@ -8,7 +8,7 @@
 [[ $DISPLAY ]] && shopt -s checkwinsize
 
 #PS1='[\u@\h \W]$'
-PS1='\[\033[1;35m\][\[\033[0;31m\]\u\[\033[0m\]@\h \[\033[1;35m\]\W]\[\033[0m\]$ '
+PS1='\[\033[1;34m\][\[\033[0;31m\]\u\[\033[0m\]@\h \[\033[1;34m\]\W]\[\033[0m\]$ '
 case ${TERM} in
   xterm*|rxvt*|Eterm|aterm|kterm|gnome*)
     PROMPT_COMMAND=${PROMPT_COMMAND:+$PROMPT_COMMAND; }'printf "\033]0;%s@%s:%s\007" "${USER}" "${HOSTNAME%%.*}" "{PWD/#$HOME/\~}"'
