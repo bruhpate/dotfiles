@@ -68,4 +68,16 @@ else
     echo "\033[0;31mError\033[0m"
 fi
 
+#Kitty
+kitty_conf="/home/pietro/.config/kitty/kitty.conf"
+kitty_conf_dest="/home/pietro/dotfiles/kitty/kitty.conf"
+
+echo -n "kitty.conf... "
+
+if cp -r $kitty_conf $kitty_conf_dest 2>log_file; then
+    echo "Done"
+else
+    echo "\033[0;31mError\033[0m"
+fi
+
 rm log_file
