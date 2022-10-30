@@ -22,5 +22,6 @@ esac
 [ -r /usr/share/bash-completion/bash_completion   ] && . /usr/share/bash-completion/bash_completion
 
 alias ls='ls --color=auto'
+alias swaylock='sh /home/pietro/.config/swaylock/swaylock.sh'
 
 neofetch

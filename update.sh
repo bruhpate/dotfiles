@@ -80,4 +80,16 @@ else
     echo "\033[0;31mError\033[0m"
 fi
 
+#Swaylock
+swaylock_sh="/home/pietro/.config/swaylock/swaylock.sh"
+swaylock_sh_dest="/home/pietro/dotfiles/swaylock/swaylock.sh"
+
+echo -n "swaylock.sh... "
+
+if cp -r $swaylock_sh $swaylock_sh_dest 2>log_file; then
+    echo "Done"
+else
+    echo "\033[0;31mError\033[0m"
+fi
+
 rm log_file
