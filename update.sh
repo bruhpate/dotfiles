@@ -92,4 +92,15 @@ else
     echo "\033[0;31mError\033[0m"
 fi
 
+#wlogout
+wlogout="/home/pietro/.config/wlogout"
+wlogout_dest="/home/pietro/dotfiles/"
+
+echo -n "wlogout..."
+if cp -r $wlogout $wlogout_dest 2>log_file; then
+    echo "Done"
+else
+    echo "\033[0;31mError\033[0m"
+fi
+
 rm log_file
