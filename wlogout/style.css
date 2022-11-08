@@ -8,24 +8,25 @@ button {
     color: #FFFFFF;
 	background-color: rgba(30, 30, 30, 0.67);
 	border-style: solid;
-	border-width: 2px;
+	/*border-color: #48a5c5;*/
 	background-repeat: no-repeat;
 	background-position: center;
-	background-size: 25%;
+	background-size: 30%;
 	margin: 10px;
 	border-width: 4px;
-	border-radius: 25px;
+	border-radius: 10px;
+	box-shadow: 0px 0px;
 }
 
-button:active, button:hover {
-	outline-style: none;
+button:hover, button:active, button:focus {
+	border-color: #cd4d4d
 }
 
 #lock {
     background-image: image(url("/home/pietro/.config/wlogout/icons/lock.png"), url("/home/pietro/.config/wlogout/icons/lock.png"));
 }
 
-#lock:hover {
+#lock:hover, #lock:active, #lock:focus {
     background-image: image(url("/home/pietro/.config/wlogout/icons/lock-hover.png"), url("/home/pietro/.config/wlogout/icons/lock-hover.png"));
 }
 
@@ -33,7 +34,7 @@ button:active, button:hover {
     background-image: image(url("/home/pietro/.config/wlogout/icons/logout.png"), url("/home/pietro/.config/wlogout/icons/logout.png"));
 }
 
-#logout:hover {
+#logout:hover, #logout:active, #logout:focus {
     background-image: image(url("/home/pietro/.config/wlogout/icons/logout-hover.png"), url("/home/pietro/.config/wlogout/icons/logout-hover.png"));
 }
 
@@ -41,7 +42,7 @@ button:active, button:hover {
     background-image: image(url("/home/pietro/.config/wlogout/icons/suspend.png"), url("/home/pietro/.config/wlogout/icons/suspend.png"));
 }
 
-#suspend:hover {
+#suspend:hover, #suspen:active, #suspend:focus {
     background-image: image(url("/home/pietro/.config/wlogout/icons/suspend-hover.png"), url("/home/pietro/.config/wlogout/icons/suspend-hover.png"));
 }
 
@@ -49,7 +50,7 @@ button:active, button:hover {
     background-image: image(url("/home/pietro/.config/wlogout/icons/hibernate.png"), url("/home/pietro/.config/wlogout/icons/hibernate.png"));
 }
 
-#hibernate:hover {
+#hibernate:hover, #hibernate:active, #hibernate:focus {
     background-image: image(url("/home/pietro/.config/wlogout/icons/hibernate-hover.png"), url("/home/pietro/.config/wlogout/icons/hibernate-hover.png"));
 }
 
@@ -57,7 +58,7 @@ button:active, button:hover {
     background-image: image(url("/home/pietro/.config/wlogout/icons/shutdown.png"), url("/home/pietro/.config/wlogout/icons/shutdown.png"));
 }
 
-#shutdown:hover {
+#shutdown:hover, #shutdown:active, #shutdown:focus {
     background-image: image(url("/home/pietro/.config/wlogout/icons/shutdown-hover.png"), url("/home/pietro/.config/wlogout/icons/shutdown-hover.png"));
 }
 
@@ -65,6 +66,6 @@ button:active, button:hover {
     background-image: image(url("/home/pietro/.config/wlogout/icons/reboot.png"), url("/home/pietro/.config/wlogout/icons/reboot.png"));
 }
 
-#reboot:hover {
+#reboot:hover, #reboot:active, #reboot:focus {
     background-image: image(url("/home/pietro/.config/wlogout/icons/reboot-hover.png"), url("/home/pietro/.config/wlogout/icons/reboot-hover.png"));
 }
