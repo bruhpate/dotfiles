@@ -1,17 +1,3 @@
-#!/bin/bash
-
-#Terminal
-alacritty_yml="/home/pietro/.config/alacritty/alacritty.yml"
-alacritty_dest="/home/pietro/dotfiles/alacritty/alacritty.yml"
-
-#Backup
-echo -n "alacritty.yml... "
-if cp -r $alacritty_yml $alacritty_dest 2>log_file; then
-    echo "Done"
-else
-    echo "\033[0;31mError\033[0m"
-fi
-
 #Bashrc
 bashrc="/home/pietro/.bashrc"
 bashrc_dest="/home/pietro/dotfiles/bash/.bashrc"

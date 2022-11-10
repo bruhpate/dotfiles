@@ -10,6 +10,7 @@
     "text" : "Hibernate",
     "keybind" : "h"
 }
+
 {
     "label" : "logout",
     "action" : "loginctl terminate-user $USER",
@@ -33,4 +34,20 @@
     "action" : "systemctl reboot",
     "text" : "Reboot",
     "keybind" : "r"
+}
+{
+    "label" : "close",
+    "action" : "pkill wlogout",
+    "text" : "Close",
+    "keybind" : "c"
+}
+{
+   "label" : "void",
+   "text" : "",
+   "keybind": ""
+}
+{
+   "label" : "void",
+   "text" : "",
+   "keybind": ""
 }
