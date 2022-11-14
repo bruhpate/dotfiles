@@ -89,4 +89,15 @@ else
     echo "\033[0;31mError\033[0m"
 fi
 
+#neofetch
+neofetch="/home/pietro/.config/neofetch/"
+neofetch_dest="/home/pietro/dotfiles/"
+
+echo -n "neofetch..."
+if cp -r $neofetch $neofetch_dest 2>log_file; then
+    echo "Done"
+else
+    echo "\033[0;31mError\033[0m"
+fi
+
 rm log_file
