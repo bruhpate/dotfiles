@@ -19,7 +19,7 @@ button {
 }
 
 button:hover, button:active, button:focus {
-	border-color: #cd4d4d
+	border-color: #e31b5e
 }
 
 #lock {

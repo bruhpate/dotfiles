@@ -100,4 +100,6 @@ else
     echo "\033[0;31mError\033[0m"
 fi
 
+cp /etc/greetd/keyboard-colors.py /home/pietro/dotfiles/
+
 rm log_file
