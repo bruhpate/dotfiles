@@ -1,5 +1,3 @@
-dot="~/dotfiles"
-
 #bash
 cp -r ~/.bashrc ~/dotfiles/bash/
 
