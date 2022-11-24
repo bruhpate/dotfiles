@@ -1,19 +1,23 @@
-echo "are you sure to continue? [y]"
+echo -n "Are you sure to continue? [y] "
 read check
 if [ $check == y ]; then
 
-	echo "installing programs"
-
+	echo "Updateing system:"
 	sudo pacman -Syu
-	sudo pacman -S git dunst kitty neofetch swaylock  wofi
+
+	echo "Installing yay:"
 	git clone https://aur.archlinux.org/yay.git
 	cd yay
 	makepkg -si
 	cd ..
 	rm -rf yay/
+
+	echo "Installing programs:"
+	sudo pacman -S git dunst kitty neofetch swaylock wofi swaybg
 	yay hyprland
 	yay wlogout
-
+	
+	echo "Creating folder in .config/"
 	mkdir ~/.config/dunst/ 
 	mkdir ~/.config/hypr/
 	mkdir ~/.config/kitty/
@@ -22,6 +26,7 @@ if [ $check == y ]; then
 	mkdir ~/.config/wlogout/
 	mkdir ~/.config/wofi/
 
+	echo "Copying configs file in .config/ folders"
 	cp -r bash/.bashrc ~/.bashrc
 	cp -r dunst/ ~/.config/
 	cp -r hypr/ ~/.config/
@@ -31,7 +36,11 @@ if [ $check == y ]; then
 	cp -r wlogout/ ~/.config/
 	cp -r wofi/ ~/.config/
 
+	echo "Starting Hyprland"
 	Hyprland
+
+else
+	echo "press 'y' to continue the installation" 
 fi
 
 
