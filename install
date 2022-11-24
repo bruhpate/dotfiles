@@ -1,0 +1,34 @@
+echo "are you sure to continue? [y]"
+read check
+if [ $check == y ]; then
+
+	echo "installing programs"
+
+	sudo pacman -Syu
+	sudo pacman -S git dunst kitty neofetch swaylock wlogout wofi
+	git clone https://aur.archlinux.org/yay.git
+	cd yay
+	makepkg -si
+	cd ..
+	rm yay/
+	yay hyprland
+
+	mkdir ~/.config/dunst/ 
+	mkdir ~/.config/hypr/
+	mkdir ~/.config/kitty/
+	mkdir ~/.config/neofetch/
+	mkdir ~/.config/swaylock
+	mkdir ~/.config/wlogout/
+	mkdir ~/.config/wofi/
+
+	cp -r /bash/.bashrc ~/.bashrc
+	cp -r /dunst/ ~/.config/dunst/
+	cp -r /hypr/ ~/.config/hypr/
+	cp -r /kitty/ ~/.config/kitty/
+	cp -r /neofetch/ ~/.config/neofetch/
+	cp -r /swaylock/ ~/.config/swaylock/
+	cp -r /wlogout/ ~/.config/wlogout/
+	cp -r /wofi/ ~/.config/wofi/
+fi
+
+
