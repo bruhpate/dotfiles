@@ -11,7 +11,8 @@ if [ $check == y ]; then
 	makepkg -si
 	cd ..
 	rm -rf yay/
-	yay hyprland wlogout
+	yay hyprland
+	yay wlogout
 
 	mkdir ~/.config/dunst/ 
 	mkdir ~/.config/hypr/
@@ -21,14 +22,14 @@ if [ $check == y ]; then
 	mkdir ~/.config/wlogout/
 	mkdir ~/.config/wofi/
 
-	cp -r /bash/.bashrc ~/.bashrc
-	cp -r /dunst/ ~/.config/
-	cp -r /hypr/ ~/.config/
-	cp -r /kitty/ ~/.config/
-	cp -r /neofetch/ ~/.config/
-	cp -r /swaylock/ ~/.config/
-	cp -r /wlogout/ ~/.config/
-	cp -r /wofi/ ~/.config/
+	cp -r bash/.bashrc ~/.bashrc
+	cp -r dunst/ ~/.config/
+	cp -r hypr/ ~/.config/
+	cp -r kitty/ ~/.config/
+	cp -r neofetch/ ~/.config/
+	cp -r swaylock/ ~/.config/
+	cp -r wlogout/ ~/.config/
+	cp -r wofi/ ~/.config/
 
 	Hyprland
 fi
