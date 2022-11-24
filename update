@@ -1,105 +1,25 @@
-#Bashrc
-bashrc="/home/pietro/.bashrc"
-bashrc_dest="/home/pietro/dotfiles/bash/.bashrc"
+dot="~/dotfiles"
 
-#Backup
-echo -n ".bashrc... "
-if cp -r $bashrc $bashrc_dest 2>log_file; then
-    echo "Done"
-else
-    echo "\033[0;31mError\033[0m"
-fi
+#bash
+cp -r ~/.bashrc ~/dotfiles/bash/
 
-#Dunst
-dunstrc="/home/pietro/.config/dunst/dunstrc"
-dunstrc_dest="/home/pietro/dotfiles/dunst/dunstrc"
+#dunst
+cp -r ~/.config/dunst/ ~/dotfiles/
 
-#Backup
-echo -n "dunstrc... "
-if cp -r $dunstrc $dunstrc_dest 2>log_file; then
-    echo "Done"
-else
-    echo "\033[0;31mError\033[0m"
-fi
+#hyprland
+cp -r ~/.config/hypr/ ~/dotfiles/
 
-#Hyprland
-hyprland_conf="/home/pietro/.config/hypr/hyprland.conf"
-hyprland_conf_dest="/home/pietro/dotfiles/hyprland/hyprland.conf"
-wallapaper_jpg="/home/pietro/.config/hypr/wallpaper.jpg"
-wallapaper_jpg_dest="/home/pietro/dotfiles/hyprland/wallpaper.jpg"
-
-#Backup
-echo -n "hyprland.conf... "
-if cp -r $hyprland_conf $hyprland_conf_dest 2>log_file; then
-    echo "Done"
-else
-    echo "\033[0;31mError\033[0m"
-fi
-
-echo -n "wallpaper.jpg... "
-if cp -r $wallapaper_jpg $wallapaper_jpg_dest 2>log_file; then
-    echo "Done"
-else
-    echo "\033[0;31mError\033[0m"
-fi
-
-#Wofi
-wofi_style_css="/home/pietro/.config/wofi/style.css"
-wofi_style_css_dest="/home/pietro/dotfiles/wofi/style.css"
-
-echo -n "wofi_style.css... "
-if cp -r $wofi_style_css $wofi_style_css_dest 2>log_file; then
-    echo "Done"
-else
-    echo "\033[0;31mError\033[0m"
-fi
-
-#Kitty
-kitty_conf="/home/pietro/.config/kitty/kitty.conf"
-kitty_conf_dest="/home/pietro/dotfiles/kitty/kitty.conf"
-
-echo -n "kitty.conf... "
-
-if cp -r $kitty_conf $kitty_conf_dest 2>log_file; then
-    echo "Done"
-else
-    echo "\033[0;31mError\033[0m"
-fi
-
-#Swaylock
-swaylock_sh="/home/pietro/.config/swaylock/swaylock.sh"
-swaylock_sh_dest="/home/pietro/dotfiles/swaylock/swaylock.sh"
-
-echo -n "swaylock.sh... "
-
-if cp -r $swaylock_sh $swaylock_sh_dest 2>log_file; then
-    echo "Done"
-else
-    echo "\033[0;31mError\033[0m"
-fi
-
-#wlogout
-wlogout="/home/pietro/.config/wlogout"
-wlogout_dest="/home/pietro/dotfiles/"
-
-echo -n "wlogout..."
-if cp -r $wlogout $wlogout_dest 2>log_file; then
-    echo "Done"
-else
-    echo "\033[0;31mError\033[0m"
-fi
+#kitty
+cp -r ~/.config/kitty/ ~/dotfiles/
 
 #neofetch
-neofetch="/home/pietro/.config/neofetch/"
-neofetch_dest="/home/pietro/dotfiles/"
+cp -r ~/.config/neofetch/ ~/dotfiles/
 
-echo -n "neofetch..."
-if cp -r $neofetch $neofetch_dest 2>log_file; then
-    echo "Done"
-else
-    echo "\033[0;31mError\033[0m"
-fi
+#swaylock
+cp -r ~/.config/swaylock/ ~/dotfiles/
 
-cp /etc/greetd/keyboard-colors.py /home/pietro/dotfiles/
+#wlogout
+cp -r ~/.config/wlogout/ ~/dotfiles/
 
-rm log_file
+#wofi
+cp -r ~/.config/wofi/ ~/dotfiles/ 
