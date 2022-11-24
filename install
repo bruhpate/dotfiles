@@ -5,13 +5,13 @@ if [ $check == y ]; then
 	echo "installing programs"
 
 	sudo pacman -Syu
-	sudo pacman -S git dunst kitty neofetch swaylock wlogout wofi
+	sudo pacman -S git dunst kitty neofetch swaylock  wofi
 	git clone https://aur.archlinux.org/yay.git
 	cd yay
 	makepkg -si
 	cd ..
-	rm yay/
-	yay hyprland
+	rm -rf yay/
+	yay hyprland wlogout
 
 	mkdir ~/.config/dunst/ 
 	mkdir ~/.config/hypr/
@@ -22,13 +22,15 @@ if [ $check == y ]; then
 	mkdir ~/.config/wofi/
 
 	cp -r /bash/.bashrc ~/.bashrc
-	cp -r /dunst/ ~/.config/dunst/
-	cp -r /hypr/ ~/.config/hypr/
-	cp -r /kitty/ ~/.config/kitty/
-	cp -r /neofetch/ ~/.config/neofetch/
-	cp -r /swaylock/ ~/.config/swaylock/
-	cp -r /wlogout/ ~/.config/wlogout/
-	cp -r /wofi/ ~/.config/wofi/
+	cp -r /dunst/ ~/.config/
+	cp -r /hypr/ ~/.config/
+	cp -r /kitty/ ~/.config/
+	cp -r /neofetch/ ~/.config/
+	cp -r /swaylock/ ~/.config/
+	cp -r /wlogout/ ~/.config/
+	cp -r /wofi/ ~/.config/
+
+	Hyprland
 fi
 
 
