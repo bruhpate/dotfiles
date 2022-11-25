@@ -17,7 +17,7 @@ if [ $check == y ]; then
 	yay hyprland
 	yay wlogout
 	
-	echo "Creating folder in .config/"
+	echo "Creating folder in .config/:"
 	mkdir ~/.config/dunst/ 
 	mkdir ~/.config/hypr/
 	mkdir ~/.config/kitty/
@@ -26,7 +26,7 @@ if [ $check == y ]; then
 	mkdir ~/.config/wlogout/
 	mkdir ~/.config/wofi/
 
-	echo "Copying configs file in .config/ folders"
+	echo "Copying configs file in .config/ folders:"
 	cp -r bash/.bashrc ~/.bashrc
 	cp -r dunst/ ~/.config/
 	cp -r hypr/ ~/.config/
@@ -36,7 +36,7 @@ if [ $check == y ]; then
 	cp -r wlogout/ ~/.config/
 	cp -r wofi/ ~/.config/
 
-	echo "Starting Hyprland"
+	echo "Starting Hyprland:"
 	Hyprland
 
 else
