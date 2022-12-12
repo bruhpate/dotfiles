@@ -16,7 +16,7 @@ if [ $check == y ]; then
 	sudo pacman -S git dunst kitty neofetch swaylock wofi swaybg
 	yay hyprland
 	yay wlogout
-	
+
 	echo "Creating folder in .config/:"
 	mkdir ~/.config/dunst/ 
 	mkdir ~/.config/hypr/
@@ -24,7 +24,7 @@ if [ $check == y ]; then
 	mkdir ~/.config/neofetch/
 	mkdir ~/.config/swaylock
 	mkdir ~/.config/wlogout/
-	mkdir ~/.config/wofi/
+	mkdir ~/.config/wofi/	
 
 	echo "Copying configs file in .config/ folders:"
 	cp -r bash/.bashrc ~/.bashrc
@@ -38,7 +38,6 @@ if [ $check == y ]; then
 
 	echo "Starting Hyprland:"
 	Hyprland
-
 else
 	echo "press 'y' to continue the installation" 
 fi
