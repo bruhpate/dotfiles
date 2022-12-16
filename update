@@ -21,3 +21,6 @@ cp -r ~/.config/wlogout/ ~/dotfiles/
 
 #wofi
 cp -r ~/.config/wofi/ ~/dotfiles/ 
+
+#waybar 
+cp -r ~/.config/waybar/ ~/dotfiles/ 
