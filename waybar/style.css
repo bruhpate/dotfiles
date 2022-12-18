@@ -1,9 +1,7 @@
 * {
     font-family: "3270Medium Nerd Font Mono", Font Awesome, Roboto, Arial, sans-serif;
-    font-size: 20px;
+    font-size: 24px;
     color: #ffffff;
-    border-radius: 10px;
-    border-color: #ffffff;
     padding: 2px 0px 0px 0px;
     font-weight: bold;
 }
@@ -14,6 +12,8 @@ window {
 }
 window#waybar {
     background: rgba(0, 0, 0, 0);
+    border: 2px;
+    border-color: #ffffff;
 }
 .modules-right {
     margin: 2px 10px 0 0;
@@ -53,22 +53,37 @@ window#waybar {
     background-color: rgba(0,43,51,1);
     border-radius: 1px;
 }
-
 #custom-shutdown{
-    padding: 0 0 0 10px;
+    padding: 0 10 0 10;
+    margin: 0 0 0 5;
     border-style: solid;
-    border-color: white;
-    border: 5px;
-    background: transparent;
-
+    border-radius: 5px;
 }
-#clock,
+#custom-shutdown{
+    border-width: 3px;
+}
+#pulseaudio{
+    padding: 2 10 0 10;
+    margin: 0 5 0 0;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 5px;
+    /*background-color: #222222;*/
+}
+
+#clock{
+    padding: 0 10 0 10;
+    margin: 0 5 0 0;
+    border-style: solid;
+    border-color: #ffffff;
+    border-radius: 5px;
+    background-color: #222222;
+}
 #battery,
 #cpu,
 #memory,
 #temperature,
 #network,
-#pulseaudio,
 #custom-media,
 #tray,
 #mode,
@@ -80,12 +95,6 @@ window#waybar {
 #mode {
     color: #cc3436;
     font-weight: bold;
-}
-#custom-power {
-    background-color: rgba(0,119,179,0.6);
-    border-radius: 50px;
-    margin: 5px 5px;
-    padding: 1px 3px;
 }
 /*-----Indicators----*/
 #idle_inhibitor.activated {
