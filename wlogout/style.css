@@ -1,25 +1,27 @@
 * {
 	background-image: none;
+	font-family:"3270Medium Nerd Font Mono";
+	font-size: 30px;
 }
 window {
 	background-color: rgba(12, 12, 12, 0.3);
 }
 button {
-    color: #FFFFFF;
-	background-color: rgba(30, 30, 30, 0.67);
+  color: #ffffff;
+	background-color: rgba(0, 0, 0, 0.45);
 	border-style: solid;
-	/*border-color: #48a5c5;*/
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: 30%;
 	margin: 10px;
-	border-width: 4px;
+	border-width: 5px;
 	border-radius: 10px;
+	border-color: rgba(0, 0, 0, 0.45);
 	box-shadow: 0px 0px;
 }
 
 button:hover, button:active, button:focus {
-	border-color: #e31b5e
+	border-color: #ffffff
 }
 
 #lock {
