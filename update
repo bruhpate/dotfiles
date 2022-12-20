@@ -24,3 +24,7 @@ cp -r ~/.config/wofi/ ~/dotfiles/
 
 #waybar 
 cp -r ~/.config/waybar/ ~/dotfiles/ 
+
+#cava
+cp -r ~/.config/cava ~/dotfiles/ 
+
