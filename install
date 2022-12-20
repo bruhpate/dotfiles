@@ -25,6 +25,7 @@ if [ $check == y ]; then
 	mkdir ~/.config/swaylock
 	mkdir ~/.config/wlogout/
 	mkdir ~/.config/wofi/	
+	mkdir ~/.config/cava/  
 
 	echo "Copying configs file in .config/ folders:"
 	cp -r bash/.bashrc ~/.bashrc
@@ -35,6 +36,7 @@ if [ $check == y ]; then
 	cp -r swaylock/ ~/.config/
 	cp -r wlogout/ ~/.config/
 	cp -r wofi/ ~/.config/
+	cp -r cava/ ~/.config/
 
 	echo "Starting Hyprland:"
 	Hyprland
