@@ -1,13 +1,14 @@
 window {
 margin: 0px;
-border: 2px solid #d1b2fa;
-border-radius: 8px;
-background-color: #282a36;
+border-width: 8px;
+background-color: rgba(0, 0, 0, 0);
 }
 
 #input {
 margin: 5px;
-font-family: Cascadia Code;
+font-family: "3270Medium Nerd Font Mono";
+font-size: 20px;
+font-weight: bold;
 border: none;
 color: #f8f8f2;
 background-color: #44475a;
@@ -15,14 +16,12 @@ background-color: #44475a;
 
 #inner-box {
 margin: 5px;
-border: none;
-background-color: #282a36;
 }
 
 #outer-box {
 margin: 5px;
 border: none;
-background-color: #282a36;
+background-color: rgba(0, 0, 0, 0);
 }
 
 #scroll {
@@ -34,9 +33,14 @@ border: none;
 margin: 5px;
 font-family: Cascadia Code;
 border: none;
+font-family: "3270Medium Nerd Font Mono";
+font-size: 20px;
+font-weight: bold;
 color: #f8f8f2;
-} 
+border-width: 8px;
+background-color: rgba(0, 0, 0, 0); 
+}
 
-#entry:selected {
+#entry {
 background-color: #44475a;
 }
