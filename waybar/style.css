@@ -27,6 +27,29 @@ window#waybar {
 }
 .modules-left { 
 }
+#custom-mute {
+    padding: 0px 10px 0px 10px;
+    margin: 0px 5px 0px 5px;
+    border-style: solid;
+    /*border-color: #ffffff;*/
+    border-color: #aaaaaa;
+    border-radius: 10px;
+    border-width: 3px;
+    /*background-color: #222222;*/
+    background-color: rgba(0, 0, 0, 0.45);
+}
+
+#custom-calc {
+    padding: 0px 10px 0px 10px;
+    margin: 0px 5px 0px 5px;
+    border-style: solid;
+    /*border-color: #ffffff;*/
+    border-color: #aaaaaa;
+    border-radius: 10px;
+    border-width: 3px;
+    /*background-color: #222222;*/
+    background-color: rgba(0, 0, 0, 0.45);
+}
 #custom-shutdown {
     padding: 0px 10px 0px 10px;
     margin: 0px 0px 0px 5px;
@@ -40,7 +63,7 @@ window#waybar {
 }
 #pulseaudio {
     padding: 0px 10px 0px 10px;
-    margin: 0px 5px 0px 0px;
+    margin: 0px 5px 0px 5px;
     border-style: solid;
     /*border-color: #ffffff;*/
     border-color: #aaaaaa;

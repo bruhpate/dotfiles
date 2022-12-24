@@ -10,8 +10,20 @@
 
     "modules-center": ["hyprland/window"],
 
-    "modules-right": ["pulseaudio", "custom/shutdown"],
+    "modules-right": ["custom/calc", "custom/mute", "pulseaudio", "custom/shutdown"],
 
+    "custom/mute": {
+        "format": "{icon}",
+        "format-icons": ["",""],
+        "on-scroll-down": "amixer set Master mute",
+        "on-scroll-up": "amixer set Master unmute",
+    },
+
+    "custom/calc": {
+        "format": "",
+        "tooltip": false,
+        "on-click": "gnome-calculator"
+    },
 
     "custom/shutdown": {
         "format": "⏻",
@@ -140,7 +152,6 @@
         "format": "{volume}% {icon}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " {format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
