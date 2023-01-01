@@ -1,6 +1,6 @@
 * {
     font-family: "3270Medium Nerd Font Mono", sans-serif;
-    font-size: 24px;
+    font-size: 22px;
     color: #ffffff;
     padding: 2px 0px 0px 0px;
     font-weight: bold;
@@ -25,7 +25,8 @@ window#waybar {
     /*background-color: #222222;*/
     background-color: rgba(0, 0, 0, 0.45);
 }
-.modules-left { 
+.modules-left {
+    margin: 2px 0px 0px 10px;
 }
 #custom-mute {
     padding: 0px 10px 0px 10px;
@@ -38,7 +39,6 @@ window#waybar {
     /*background-color: #222222;*/
     background-color: rgba(0, 0, 0, 0.45);
 }
-
 #custom-calc {
     padding: 0px 10px 0px 10px;
     margin: 0px 5px 0px 5px;
@@ -55,7 +55,8 @@ window#waybar {
     margin: 0px 0px 0px 5px;
     border-style: solid;
     /*border-color: #ffffff;*/
-    border-color: #aaaaaa;
+    color: #ff5555;
+    border-color: #ff5555;
     border-radius: 10px;
     border-width: 3px;
     /*background-color: #222222*/
@@ -74,7 +75,6 @@ window#waybar {
 }
 #clock {
     padding: 0px 10px 0px 10px;
-    margin: 0px 10px 0px 10px;
     border-style: solid;
     /*border-color: #ffffff*/
     border-color: #aaaaaa;
