@@ -159,14 +159,12 @@
 # background must also be defined in hex or remain commented out. 1 = on, 0 = off.
 # You can define as many as 8 different colors. They range from bottom to top of screen
  gradient = 1
- gradient_count = 4
+ gradient_count = 3
  gradient_color_1 = '#222222'
- gradient_color_2 = '#0000ff'
+ gradient_color_2 = '#2222aa'
  gradient_color_3 = '#ffffff'
  gradient_color_4 = '#ffffff'
- gradient_color_5 = '#ffffff'
- gradient_color_5 = '#0000ff'
- gradient_color_6 = '#ffffff'
+
 [smoothing]
 
 # Percentage value for integral smoothing. Takes values from 0 - 100.
