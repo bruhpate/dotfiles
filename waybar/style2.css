@@ -15,16 +15,6 @@ window#waybar {
 .modules-right {
     margin: 2px 10px 0px 0px;
 }
-.modules-center {
-    margin: 2px 40px 0px 40px;
-    padding: 0px 10px 0px 10px;
-    border-style: solid;
-    border-color: #aaaaaa;
-    border-radius: 10px;
-    border-width: 3px;
-    /*background-color: #222222;*/
-    background-color: rgba(0, 0, 0, 0.45);
-}
 .modules-left {
     margin: 2px 0px 0px 10px;
 }

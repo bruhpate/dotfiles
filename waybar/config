@@ -142,4 +142,40 @@
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
         // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     }
-}
+},
+
+{
+        "layer": "top",
+        "position": "bottom",
+        
+        "modules-right": ["pulseaudio"],
+        "modules-left":["clock"],
+
+        "clock": {
+             "timezone": "Europe/Rome",
+             "tooltip-format": "<big>{:%a %j / 365}</big>\n<tt><small>{calendar}</small></tt>",
+             "interval": 1,
+             "format": "{:%d %B %H:%M:%S}"
+        },
+
+        "pulseaudio": {
+        "scroll-step": 5, // %, can be a float
+        "format": "{volume} {icon}",
+        "format-bluetooth": "{volume}% {icon} {format_source}",
+        "format-bluetooth-muted": " {icon} {format_source}",
+        "format-source": "{volume}% ",
+        "format-source-muted": "",
+        "format-muted": "    ",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "",
+            "headset": "",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": ["", "", ""]
+        }, 
+        "on-click-right": "sh .config/waybar/script/pavu.sh",
+        "on-click": "sh .config/waybar/script/un-mute.sh",
+    },
+}       
