@@ -28,3 +28,10 @@ cp -r ~/.config/waybar/ ~/dotfiles/
 #cava
 cp -r ~/.config/cava ~/dotfiles/ 
 
+#git push if i pass it a parameter
+if [ $# -eq 1 ];then
+  git add .
+  git commit -m "$1"
+  git push
+fi
+
