@@ -7,9 +7,6 @@
 
 [[ $DISPLAY ]] && shopt -s checkwinsize
 
-#PS1='[\u@\h \W]$'
-BLUE=''
-VOID=''
 PS1='\[\033[0;34m\][ \W ]\$ \[\033[0;0m\]'
 case ${TERM} in
   xterm*|rxvt*|Eterm|aterm|kterm|gnome*)
