@@ -2,8 +2,8 @@
         "layer": "top",
         "position": "bottom",
         
-        "modules-right": ["pulseaudio"],
-        "modules-left":["clock"],
+        "modules-right": [],
+        "modules-left":["custom/config","custom/Documenti","custom/dotfiles","custom/Downloads"],
 
         "clock": {
              "timezone": "Europe/Rome",
@@ -12,24 +12,28 @@
              "format": "{:%d %B %H:%M:%S}"
         },
 
-        "pulseaudio": {
-        "scroll-step": 5, // %, can be a float
-        "format": "{volume} {icon}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-source": "{volume}% ",
-        "format-source-muted": "",
-        "format-muted": "    ",
-        "format-icons": {
-            "headphone": "",
-            "hands-free": "",
-            "headset": "",
-            "phone": "",
-            "portable": "",
-            "car": "",
-            "default": ["", "", ""]
-        }, 
-        "on-click-right": "sh .config/waybar/script/pavu.sh",
-        "on-click": "sh .config/waybar/script/un-mute.sh",
-    },
+	"custom/config": {	
+	     "format": "Config",
+	     "on-click": "kitty ~/.config/",
+	     "on-click-right": "nemo ~/.config/"
+	},
+
+	"custom/Documenti": {	
+	     "format": "Documenti",
+	     "on-click": "kitty ~/Documenti/",
+	     "on-click-right": "nemo ~/Documenti/"
+	},
+
+ 	"custom/dotfiles": {	
+	     "format": "Dotfiles",
+	     "on-click": "kitty ~/dotfiles/",
+	     "on-click-right": "nemo ~/dotfiles/"
+	},
+
+	"custom/Downloads": {	
+	     "format": "Downloads",
+	     "on-click": "kitty ~/Downloads/",
+	     "on-click-right": "nemo ~/Downloads/"
+	},	
 }
+
