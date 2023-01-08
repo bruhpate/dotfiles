@@ -2,7 +2,7 @@ echo -n "Are you sure to continue? [y] "
 read check
 if [ $check == y ]; then
 
-	echo "Updateing system:"
+	echo "Updating system:"
 	sudo pacman -Syu
 
 	echo "Installing yay:"
@@ -43,5 +43,3 @@ if [ $check == y ]; then
 else
 	echo "press 'y' to continue the installation" 
 fi
-
-
